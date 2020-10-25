@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/calculator.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    
+    <title>Calculator</title>
+</head>
+<body>
+    <header class="header" role="banner">
+        <h1 class="logo">
+          <a href="#"><img src="images/logowhit.png" alt=""></a>
+        </h1>
+        <div class="nav-wrap">
+          <nav class="main-nav" role="navigation">
+            <ul class="unstyled list-hover-slide">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="to-do-list.html">To_Do</a></li>
+              <li><a href="calculator.html">Calculator</a></li>
+              
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+
+      <div class="container">
+        <form name="form">
+         <div class="display">
+                 <input type="text"  name="displayResult"   id="calcinput" disabled placeholder="ONECLICK" eadonly />
+    
+         </div>
+           <div class="buttons">
+             <div class="row">
+              <input  type="button"  name="b7"   value="7"  onClick="calcNumbers(b7.value)">
+              <input  type="button"  name="b8"   value="8"  onClick="calcNumbers(b8.value)">
+              <input  type="button"  name="b9"   value="9"  onClick="calcNumbers(b9.value)">
+              <input  type="button1" name="addb" value="+"  onClick="calcNumbers(addb.value)">
+            </div>
+    
+            <div class="row">
+              <input  type="button"  name="b4"   value="4"  onClick="calcNumbers(b4.value)">
+              <input  type="button"  name="b5"   value="5"  onClick="calcNumbers(b5.value)">
+              <input  type="button"  name="b6"   value="6"  onClick="calcNumbers(b6.value)">
+              <input  type="button1" name="subb" value="-"  onClick="calcNumbers(subb.value)">
+            </div>
+    
+            <div class="row">
+              <input type="button"  name="b1"   value="1"  onClick="calcNumbers(b1.value)">
+              <input type="button"  name="b2"   value="2"  onClick="calcNumbers(b2.value)">
+              <input type="button"  name="b3"   value="3"  onClick="calcNumbers(b3.value)">
+              <input type="button1" name="mulb" value="*"  onClick="calcNumbers(mulb.value)">
+            </div>
+    
+            <div class="row">
+              <input type="button1"  name="potb"   value=" ."   readonly  onClick="calcNumbers(potb.value)">
+                      <input type="button"   name="b0"     value="0"   readonly  onClick="calcNumbers(b0.value)">
+              <input type="button1"  name="divb"   value=" /"   readonly  onClick="calcNumbers(divb.value)">
+              <input type="button1"  class="red"   value="="   readonly  onClick="displayResult.value=eval(displayResult.value)">
+                    </div>
+    
+                    <div class="row">
+                        <input type="button1"   name="bf"                  value="!"      readonly    onClick="calcNumbers(bf.value)">
+                        <input type="button1"   name="bcc"      id="ce"    value="C"      readonly    onClick="calcNumbers(bcc.value)">
+                        <input type="button1"   name="power1"   id="po"    value="^"      readonly    onClick="calcNumbers(power1.value)">
+                        <input type="button1"   name="ABS"      id="ABS"   value="A"    readonly    onClick="calcNumbers(ABS.value)">
+    
+                    </div>
+          </div>
+    
+        </form>
+        </div>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+    <script  src="js/calculator.js"></script>
+</body>
+</html>

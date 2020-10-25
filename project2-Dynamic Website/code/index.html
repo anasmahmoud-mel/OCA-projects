@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">2
+
+    <meta name="description" content="Sign up with us to make some calculation and to write do list and save task on your browser  all of that in oneclick !  ">
+    <meta name="keywords" content="Sign up page , To Do List , Calculator, HTML , CSS , Javascript , JS">
+    <meta name="author" content="Hamzeh Obeidat, Mohammad Yacoub , Anas Melhem">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.png"  sizes="16x16">
+
+
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <!-- Start Navbar -->
+    <header class="header" role="banner">
+        <h1 class="logo">
+          <a href="#"><img src="images/logowhit.png" alt=""></a>
+        </h1>
+        <div class="nav-wrap">
+          <nav class="main-nav" role="navigation">
+            <ul class="unstyled list-hover-slide">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="to-do-list.html">To_Do</a></li>
+              <li><a href="calculator.html">Calculator</a></li>
+              
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- End Navbar -->
+
+       <!-- Start seting Box -->
+       <div class="setting-box">
+
+        <div class="toggl-seting">
+            <i class="fa fa-cog icog"></i>
+        </div>
+
+        <div class="setings-contaner">
+            <div class="option-box">
+                <h4>Colors</h4>
+                <ul class="colors-list">
+    
+                    <li class="active" data-color="#FF7052"></li>
+                    <li data-color="#DAA46E"></li>
+                    <li data-color="#7BBD59"></li>
+                    <li data-color="#d61212"></li>
+                </ul>
+
+                <h4>Font Size</h4>
+                <select class="font_size" id="font_size">
+                    <option value="1.25rem">1.25rem</option>
+                    <option value="1.375rem">1.375rem</option>
+                    <option value="1.5625rem">1.5625rem</option>
+                    <option value="1.6875rem">1.6875rem</option>
+                    <option value="1.8125rem">1.8125rem</option>
+                </select>
+
+                <hr>
+                <h4>Font Family</h4>
+                <select name="font_family" id="font_family">
+                    <option value="Arial" selected>Arial</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Courier New">Courier New</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+      <!-- Start login Form -->
+    <div class = "container2">
+        <div class="logo-website">
+            <img src="images/logopng.png" alt="">
+        </div>
+        <div class="login-head">
+           <div class="web-name">
+               Welcom To <br>
+               Our website
+           </div>
+           <div class="login-logo">
+            <img src="images/logoicon.png">
+           </div>
+        </div>
+        <div class="login-body">
+             <!--login-->
+        <div class="login">
+            <!--Start Form (Log in)-->
+            <div class="reg-info">
+              <input type="text" placeholder="User Name" class="userName"  required>
+              
+              <input type="email" placeholder="E-mail" class="userEmail" required>
+              
+              <input type="date" id="birthday" name="birthday" class="userBirht" required>
+              <input type="text" placeholder="Phone-Number" class="userPone" required>
+              <input type="password" placeholder="Password" class="userPass" required>
+              <input type="password" placeholder="Repeat Password" class="userPass" id = "reppass" required>
+              <input type="checkbox" id="check" name="" >
+              <label > I Accept The Term & Privecy Policy.</label><br>
+              <div class="btn-conf"> 
+                
+                <button class="btn disabled ische " id="register">Rigester</button><button class="btn disabled ische" id="visit">Visit</button><button class="btn " id="clear">Clear</button>
+              </div>
+            </div>    
+          <!-- </form> -->
+          <!--End Form-->
+        </div>
+    </div>
+    <!-- End login Form -->
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+    <script  src="js/main.js"></script>
+</body>
+</html>
